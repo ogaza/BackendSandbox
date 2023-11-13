@@ -1,8 +1,9 @@
 using CQRS.Commands;
+using CQRS.Db;
 using System.Threading.Tasks;
 using System.Transactions;
 
-namespace CQRS.Infrastructure
+namespace CQRS.Decorators
 {
     internal class TransactionCommandHandlerDecorator<TCommand> : ICommandHandler<TCommand> where TCommand : ICommand
     {
