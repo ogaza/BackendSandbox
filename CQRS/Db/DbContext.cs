@@ -3,7 +3,7 @@ using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace CQRS.Infrastructure
+namespace CQRS.Db
 {
     public class AppDbContext : DbContext
     {
@@ -11,7 +11,7 @@ namespace CQRS.Infrastructure
         {
         }
 
-        public DbSet<RedBetCustomer> ExampleEntities { get; set; }        
+        public DbSet<ExampleEntity> ExampleEntities { get; set; }        
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

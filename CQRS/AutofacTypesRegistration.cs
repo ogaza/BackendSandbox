@@ -4,7 +4,9 @@ using Microsoft.Extensions.Configuration;
 using Autofac;
 using Module = Autofac.Module;
 using CQRS.Commands;
-using CQRS.Infrastructure;
+using CQRS.Queries;
+using CQRS.Decorators;
+using CQRS.Db;
 
 namespace CQRS.Autofac
 {

@@ -1,6 +1,7 @@
 using System.Threading.Tasks;
+using CQRS.Commands;
 
-namespace CQRS.Commands.Customers
+namespace CQRS.Customers
 {
     public class RegisterCustomerCommand : CommandBase
     {
